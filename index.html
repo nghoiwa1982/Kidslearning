@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Animal Kingdom - Learn About Animals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['Geist Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#6366F1',
+                        secondary: '#F59E0B',
+                        dark: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+    <div class="background-pattern fixed inset-0 opacity-5 pointer-events-none z-0"></div>
+    
+    <header class="relative z-10 border-b border-gray-200">
+        <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="assets/logo.svg" alt="Animal Kingdom Logo" class="h-10 w-10">
+                <h1 class="text-2xl font-bold font-mono tracking-tight">Animal<span class="text-primary">Kingdom</span></h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="font-medium text-primary hover:text-primary/80 transition-colors">Home</a>
+                <a href="#" class="font-medium text-gray-600 hover:text-primary transition-colors">Animals</a>
+                <a href="#" class="font-medium text-gray-600 hover:text-primary transition-colors">Activities</a>
+                <a href="#" class="font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 py-4 px-4 z-20">
+            <nav class="flex flex-col space-y-4">
+                <a href="#" class="font-medium text-primary hover:text-primary/80 transition-colors">Home</a>
+                <a href="#" class="font-medium text-gray-600 hover:text-primary transition-colors">Animals</a>
+                <a href="#" class="font-medium text-gray-600 hover:text-primary transition-colors">Activities</a>
+                <a href="#" class="font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Discover the Amazing World of <span class="text-primary">Animals</span></h2>
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed">Join us on an exciting journey to learn about different animals, their habitats, and fascinating facts that make each one special!</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#animals" class="px-6 py-3 bg-primary text-white font-medium rounded-lg shadow-sm hover:bg-primary/90 transition-colors">
+                            Explore Animals
+                        </a>
+                        <a href="#" class="px-6 py-3 bg-white text-primary font-medium rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
+                            Start Learning
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-8 text-center">About <span class="text-primary">Animal Kingdom</span></h2>
+                    <div class="prose prose-lg mx-auto">
+                        <p>Welcome to Animal Kingdom, a fun and educational platform designed specifically for kids to learn about the amazing diversity of animals on our planet.</p>
+                        <p>Our mission is to inspire curiosity, foster love for wildlife, and promote conservation values through engaging content that makes learning enjoyable.</p>
+                        <p>Each animal page features:</p>
+                        <ul>
+                            <li>Beautiful illustrations and photos</li>
+                            <li>Easy-to-understand facts and information</li>
+                            <li>Fun interactive elements</li>
+                            <li>Interesting sound clips of animal calls</li>
+                            <li>Conservation status and importance</li>
+                        </ul>
+                        <p>Whether you're a parent, teacher, or young animal enthusiast, Animal Kingdom provides a safe and enriching environment to discover the wonders of wildlife.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="animals" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">Featured <span class="text-primary">Animals</span></h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Click on any animal card to learn more about these amazing creatures. We're constantly adding new animals to our collection!</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Fennec Fox Card -->
+                    <div class="animal-card group">
+                        <div class="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                            <div class="p-6 relative overflow-hidden">
+                                <div class="bg-secondary/10 rounded-lg p-6 h-48 flex items-center justify-center">
+                                    <img src="assets/fennec-fox.svg" alt="Fennec Fox" class="h-40 object-contain transition-transform duration-300 group-hover:scale-110">
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 flex-grow flex flex-col">
+                                <h3 class="text-xl font-bold mb-2 font-mono">Fennec Fox</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">The fennec fox is the smallest fox species. It has distinctive large ears that help it dissipate heat and locate prey in the desert.</p>
+                                <a href="fennec-fox/index.html" class="inline-flex items-center text-primary font-medium">
+                                    Learn more
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panda Card -->
+                    <div class="animal-card group">
+                        <div class="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                            <div class="p-6 relative overflow-hidden">
+                                <div class="bg-primary/10 rounded-lg p-6 h-48 flex items-center justify-center">
+                                    <img src="assets/panda.svg" alt="Giant Panda" class="h-40 object-contain transition-transform duration-300 group-hover:scale-110">
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 flex-grow flex flex-col">
+                                <h3 class="text-xl font-bold mb-2 font-mono">Giant Panda</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">The giant panda is a bear native to China. It has a distinctive black and white coat and primarily eats bamboo despite being a carnivore.</p>
+                                <a href="panda/index.html" class="inline-flex items-center text-primary font-medium">
+                                    Learn more
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon Card -->
+                    <div class="animal-card group">
+                        <div class="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                            <div class="p-6 relative overflow-hidden">
+                                <div class="bg-gray-100 rounded-lg p-6 h-48 flex items-center justify-center">
+                                    <div class="text-gray-400 border-2 border-dashed border-gray-300 rounded-full h-32 w-32 flex items-center justify-center">
+                                        <span class="font-medium">Coming Soon</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 flex-grow flex flex-col">
+                                <h3 class="text-xl font-bold mb-2 font-mono">More Animals</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">We're constantly adding new animals to our collection. Check back soon to discover more amazing creatures!</p>
+                                <span class="inline-flex items-center text-gray-400 font-medium">
+                                    Coming soon
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary/5 border-t border-b border-primary/10">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Ready to <span class="text-primary">Explore?</span></h2>
+                    <p class="text-lg text-gray-600 mb-8">Begin your adventure today and discover amazing facts about animals from around the world!</p>
+                    <a href="#animals" class="px-8 py-4 bg-primary text-white font-medium rounded-lg shadow-sm hover:bg-primary/90 transition-colors inline-block">
+                        Start Exploring Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12 relative z-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                    <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                        <img src="assets/logo.svg" alt="Animal Kingdom Logo" class="h-8 w-8">
+                        <h2 class="text-xl font-bold font-mono tracking-tight">Animal<span class="text-primary">Kingdom</span></h2>
+                    </div>
+                    <nav class="flex flex-wrap gap-x-8 gap-y-4 justify-center">
+                        <a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Home</a>
+                        <a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">About</a>
+                        <a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Animals</a>
+                        <a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Activities</a>
+                        <a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Contact</a>
+                    </nav>
+                </div>
+                <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-500 mb-4 md:mb-0">© 2023 Animal Kingdom. All rights reserved.</p>
+                    <p class="text-sm text-gray-500">Built with <a href="https://flowith.net" target="_blank" class="text-primary hover:underline">Flowith Oracle</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+    </script>
+</body>
+</html>
