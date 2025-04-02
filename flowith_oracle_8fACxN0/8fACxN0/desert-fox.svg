@@ -1,0 +1,46 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Body -->
+    <ellipse cx="50" cy="65" rx="30" ry="25" fill="#F0C087"/>
+    
+    <!-- Head -->
+    <circle cx="50" cy="45" r="18" fill="#F0C087"/>
+    
+    <!-- Left Ear -->
+    <path d="M36 35C28 25 22 10 25 5C28 0 38 15 41 25C44 35 44 45 36 35Z" fill="#F0C087"/>
+    <path d="M36 35C28 25 22 10 25 5C28 0 38 15 41 25C44 35 44 45 36 35Z" fill="#F0C087" fill-opacity="0.8"/>
+    <path d="M33 30C28 22 25 12 27 8C29 4 36 14 38 22C40 30 40 38 33 30Z" fill="#F9E4C8"/>
+    
+    <!-- Right Ear -->
+    <path d="M64 35C72 25 78 10 75 5C72 0 62 15 59 25C56 35 56 45 64 35Z" fill="#F0C087"/>
+    <path d="M64 35C72 25 78 10 75 5C72 0 62 15 59 25C56 35 56 45 64 35Z" fill="#F0C087" fill-opacity="0.8"/>
+    <path d="M67 30C72 22 75 12 73 8C71 4 64 14 62 22C60 30 60 38 67 30Z" fill="#F9E4C8"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="42" cy="42" rx="3" ry="4" fill="#42321E"/>
+    <ellipse cx="58" cy="42" rx="3" ry="4" fill="#42321E"/>
+    
+    <!-- Eyebrows -->
+    <path d="M38 36C40 34 44 35 45 37" stroke="#42321E" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M62 36C60 34 56 35 55 37" stroke="#42321E" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Nose -->
+    <path d="M50 50L48 46H52L50 50Z" fill="#42321E"/>
+    
+    <!-- Mouth -->
+    <path d="M50 50C48 54 46 55 45 55M50 50C52 54 54 55 55 55" stroke="#42321E" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Whiskers -->
+    <path d="M45 52C40 51 35 52 30 54" stroke="#42321E" stroke-width="0.75" stroke-linecap="round"/>
+    <path d="M45 54C40 55 35 57 30 60" stroke="#42321E" stroke-width="0.75" stroke-linecap="round"/>
+    <path d="M55 52C60 51 65 52 70 54" stroke="#42321E" stroke-width="0.75" stroke-linecap="round"/>
+    <path d="M55 54C60 55 65 57 70 60" stroke="#42321E" stroke-width="0.75" stroke-linecap="round"/>
+    
+    <!-- Paws -->
+    <ellipse cx="35" cy="85" rx="6" ry="4" fill="#E0B077"/>
+    <ellipse cx="65" cy="85" rx="6" ry="4" fill="#E0B077"/>
+    
+    <!-- Tail -->
+    <path d="M75 60C85 55 95 60 95 70C95 80 85 70 80 65" fill="#F0C087"/>
+  </g>
+</svg>
